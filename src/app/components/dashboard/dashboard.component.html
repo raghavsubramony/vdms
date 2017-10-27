@@ -1,0 +1,28 @@
+<vm-appheader></vm-appheader>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+             
+            <h1> <img class="img-circle" src="{{ photoUrl }}"> {{ displayName }}'s Dashboard</h1>
+        </div>
+    </div>
+</div>
+<section id="main">
+    <div class="container">
+        <div class="row">
+            <div class="list-group">
+                <div class="col-md-3">
+                    <a href="#" class="list-group-item disabled">
+    Dashboard
+  </a>
+                    <a class="list-group-item" [routerLink]="['/user']"><i class="fa fa-user"  aria-hidden="true"></i>User</a>
+                    <a href="#" class="list-group-item"><i class="fa fa-truck" aria-hidden="true"></i>vehicle</a>
+                    <a href="#" class="list-group-item"><i class="fa fa-location-arrow" aria-hidden="true"></i>location</a>
+                    <a href="#" class="list-group-item"><i class="fa fa-cogs" aria-hidden="true"></i>Last service date</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<vm-appfooter></vm-appfooter>
